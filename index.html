@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="kq"></h1>
+    <script>
+        let bmi;
+        let kg = +prompt('Nhập số cân nặng của bạn: ');
+        let cc = +prompt('Nhập chiều cao của bạn (tính theo m) : ');
+
+        bmi = kg/(Math.pow(cc,2));
+
+        if(bmi < 18.5){
+            document.getElementById('kq').innerHTML = 'Underweight';
+        }else if(18.5<=bmi<25.0){
+            document.getElementById('kq').innerHTML = 'Normal';
+        }else if(25.0<=bmi<30.0){
+            document.getElementById('kq').innerHTML = 'Overweight';
+        }else {
+            document.getElementById('kq').innerHTML = 'Obese'
+        }
+    </script>
+</body>
+</html>
